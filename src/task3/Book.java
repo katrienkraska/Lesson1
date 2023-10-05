@@ -3,14 +3,18 @@ package task3;
 import task5.Address;
 
 public class Book {
-    private String title;
-    private String author;
-    private String content;
+
+
+    public String title;
+    public String author;
+    public String content;
 
     public Book(String newTitle, String newAuthor, String newContent) {
         title = newTitle;
         author = newAuthor;
         content = newContent;
+
+    }
     }
 
     class Title {
@@ -49,25 +53,25 @@ public class Book {
             this.content = content;
         }
 
-    }
-
-    class TestBook {
-        public static void main(String[] args) {
-            Book book = new Book("Пригоди Робінзона Крузо", "Даніель Дефо",
-                    "Ця книга розповідає історію Робінзона Крузо, який опинився на безлюдному острові і боровся за виживання.");
-
-            String title = book.title;
-            String author = book.author;
-            String content = book.content;
-
+        public static void show() {
 
         }
+                public static void main(String[] args){
+                Book book = new Book("Пригоди Робінзона Крузо", "Даніель Дефо",
+                        "Ця книга розповідає історію Робінзона Крузо, який опинився " +
+                                "на безлюдному острові і боровся за виживання.");
 
-        public void show() {
+                    String title = book.title;
+                    String author = book.author;
+                    String content = book.content;
+            show();
+
+
+
+
             System.out.println("Назва книги: " + title);
             System.out.println("Автор: " + author);
             System.out.println("Зміст: " + content);
-        }
     }
 }
 

@@ -70,7 +70,7 @@ apartment = newApartment;
         this.apartment = apartment;
     }
 
-    class TestAddress{
+
         public static void main(String[] args) {
             Address address = new Address(49000, "Ukraine",
                     "Dnipro", "Gagaryna", 50, 334);
@@ -85,4 +85,4 @@ apartment = newApartment;
                     "\tStreet = " + street + "\tHouse = " + house + "\tApartment = " + apartment);
         }
     }
-}
+
